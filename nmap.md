@@ -31,6 +31,7 @@ nmap -sA 192.168.1.1             # ACK scan
 nmap -sV 192.168.1.1             # Version detection
 nmap -O 192.168.1.1              # OS detection
 nmap -A 192.168.1.1              # Aggressive scan (OS, version, scripts)
+nmap -A 192.168.91.131           # For My metasploitable machine scan you can try any reachable IP
 ```
 
 ## 🧪 Script Scanning
