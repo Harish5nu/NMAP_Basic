@@ -37,6 +37,8 @@ nmap -A 192.168.1.1              # Aggressive scan (OS, version, scripts)
 ```
 nmap --script default 192.168.1.1
 nmap --script vuln 192.168.1.1
+nmap --script smb-os-discovery.nse 192.168.91.131
+
 ```
 
 ## 💾 Output
