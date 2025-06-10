@@ -38,6 +38,7 @@ nmap -A 192.168.91.131           # For My metasploitable machine scan you can tr
 ```
 nmap --script default 192.168.1.1
 nmap --script vuln 192.168.1.1
+nmap --script vuln -A -T4 -p 21 192.168.91.131
 nmap --script smb-os-discovery.nse 192.168.91.131
 
 ```
@@ -47,5 +48,10 @@ nmap --script smb-os-discovery.nse 192.168.91.131
 nmap -oN scan.txt 192.168.1.1    # Normal output
 nmap -oG scan.gnmap 192.168.1.1  # Grepable output
 nmap -oX scan.xml 192.168.1.1    # XML output
+```
+
+## Full Scan for Vulnerability
+```
+nmap --script vuln -A -T4 -p- 21 192.168.91.131 > fullsan.txt
 ```
 
