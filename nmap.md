@@ -52,6 +52,6 @@ nmap -oX scan.xml 192.168.1.1    # XML output
 
 ## Full Scan for Vulnerability
 ```
-nmap --script vuln -A -T4 -p- 21 192.168.91.131 > fullsan.txt
+nmap --script vuln -A -T4 -p- 192.168.91.131 > fullsan.txt
 ```
 
